@@ -1,5 +1,20 @@
 [
  {
+  "id": 8,
+  "titulo": "RED con servidor",
+  "descripcion": "dcdcd",
+  "tecnologias": null,
+  "categoria": "Packet Tracer",
+  "creado_en": "2026-11-17T21:39:34.000Z",
+  "imagen": "/uploads/1794951574093-e7c134.png",
+  "enlace": null,
+  "seccion": "redes",
+  "archivo": "/uploads/1794951574099-4d6b81.pkt",
+  "archivo_nombre": "red_compleja_3routers.pkt",
+  "fecha": null,
+  "topologia": "/uploads/1794951574099-4d6b81-topologia.json"
+ },
+ {
   "id": 5,
   "titulo": "Red Corporativa Café Altiplano, S.A.",
   "descripcion": "Diseño e implementación de la red de una empresa con oficina central en Ciudad de Guatemala y cuatro sucursales (Quetzaltenango, Antigua, Cobán y Puerto Barrios). Incluye VLANs por área, direccionamiento VLSM con un bloque contiguo por sede, enlaces WAN seriales con rutas estáticas, core capa 3 con distribución redundante (EtherChannel, rapid-PVST), DHCP/DNS/HTTP centralizados y seguridad básica: SSH v2, contraseñas cifradas, port-security, bpduguard y red de invitados aislada. El informe incluye plan de direccionamiento, configuraciones, análisis de velocidades y cotización de materiales.",
