@@ -4,3 +4,5 @@
 .socials a{color:var(--muted);font-size:1.8rem;transition:all .25s var(--ease)}
 .socials a:hover{color:var(--cyan);transform:translateY(-3px)}
 footer{padding:var(--s6) 0;text-align:center;border-top:1px solid var(--border);font:400 .8rem var(--font-mono);color:var(--muted)}
+
+.contact-actions { display: flex; gap: var(--s3); justify-content: center; flex-wrap: wrap; }
