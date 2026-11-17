@@ -60,7 +60,7 @@ export async function openTopology(p: Proyecto): Promise<void> {
 
   let topo: Topology;
   try {
-    const r = await fetch(assetUrl(p.topologia));
+    const r = await fetch(assetUrl(p.topologia), { cache: 'no-cache' });
     topo = (await r.json()) as Topology;
     if (topo.schema !== 2) throw new Error('formato antiguo');
   } catch {

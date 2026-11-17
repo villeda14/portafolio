@@ -13,7 +13,8 @@ async function getJson<T>(url: string, timeoutMs?: number): Promise<T> {
   const ctl = new AbortController();
   const timer = timeoutMs ? setTimeout(() => ctl.abort(), timeoutMs) : undefined;
   try {
-    const r = await fetch(url, { signal: ctl.signal });
+    // 'no-cache': el navegador revalida con el servidor y no muestra datos viejos tras publicar
+    const r = await fetch(url, { signal: ctl.signal, cache: 'no-cache' });
     if (!r.ok) throw new Error(`${url}: ${r.status}`);
     return (await r.json()) as T;
   } finally {
