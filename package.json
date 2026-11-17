@@ -1,0 +1,37 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Portafolio de Josué Daniel Villeda: sitio web + API + lector de archivos de Packet Tracer",
+  "scripts": {
+    "dev": "tsx watch server/src/index.ts",
+    "start": "tsx server/src/index.ts",
+    "build": "npm run typecheck && npm run build:web",
+    "build:web": "node scripts/build-web.mjs",
+    "watch:web": "node scripts/build-web.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test server/tests/*.test.ts",
+    "db:setup": "mysql -u root < server/db/schema.sql",
+    "export": "tsx scripts/export-data.ts",
+    "topologias": "tsx scripts/reprocess-topologies.ts",
+    "pkt": "tsx scripts/pkt-inspect.ts",
+    "publish:site": "bash scripts/publish.sh"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "fast-xml-parser": "^5.12.1",
+    "multer": "^2.5.0",
+    "mysql2": "^3.24.6",
+    "twofish-ts": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.6",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

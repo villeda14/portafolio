@@ -1,0 +1,6 @@
+#contacto .box{max-width:640px;margin-inline:auto;text-align:center}
+#contacto h2{font-size:clamp(2rem,5vw,3rem);font-weight:800}
+.socials{display:flex;justify-content:center;gap:var(--s6);margin-top:var(--s7);padding-top:var(--s6);border-top:1px solid var(--border)}
+.socials a{color:var(--muted);font-size:1.8rem;transition:all .25s var(--ease)}
+.socials a:hover{color:var(--cyan);transform:translateY(-3px)}
+footer{padding:var(--s6) 0;text-align:center;border-top:1px solid var(--border);font:400 .8rem var(--font-mono);color:var(--muted)}

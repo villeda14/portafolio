@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Josué Daniel Villeda | Portafolio</title>
+<meta name="description" content="Portafolio de Josué Daniel Villeda: redes, programación, notas de estudio y logros.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="vignette"></div>
+<div class="progress" id="progress"></div>
+
+<header class="topbar"><a href="#inicio" class="grad mono" style="font-weight:700;font-size:1.15rem">JD</a><button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><i class="fa-solid fa-bars"></i></button></header>
+<div class="veil" id="veil"></div>
+<nav class="drawer" id="drawer" aria-label="Menú principal">
+  <div class="d-head"><span>Menú</span><button class="x" id="d-close" aria-label="Cerrar menú"><i class="fa-solid fa-xmark"></i></button></div>
+  <a href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a>
+  <a href="#sobre-mi"><i class="fa-solid fa-user"></i>Sobre mí</a>
+  <a href="#habilidades"><i class="fa-solid fa-toolbox"></i>Arsenal</a>
+  <div class="d-sep">Módulos</div>
+  <div id="d-mods"></div>
+  <a href="#contacto" style="margin-top:var(--s3)"><i class="fa-regular fa-envelope"></i>Contacto</a>
+  <div class="d-admin admin hidden"><button class="btn btn-outline" id="btn-gestion"><i class="fa-solid fa-sliders"></i> Gestionar módulos</button></div>
+</nav>
+
+<main>
+<section id="inicio">
+  <div class="container hero">
+    <div>
+      <p class="tag mono"><b></b> ping josue.local — en línea</p>
+      <h1>Josué Daniel <span class="grad">Villeda</span></h1>
+      <h2>Estudiante de Ingeniería en Telecomunicaciones y desarrollador.</h2>
+      <p>Apasionado por la conectividad, el diseño de infraestructuras de red seguras y la creación de soluciones tecnológicas integrales. Construyendo el futuro nodo a nodo.</p>
+      <div class="row">
+        <a class="btn btn-primary" id="hero-cta" href="#sobre-mi">Conóceme <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-outline" href="#contacto">Contacto</a>
+      </div>
+    </div>
+    <svg class="topology" viewBox="0 0 400 360" role="img" aria-label="Topología de red: nodo central conectado a cuatro sucursales">
+      <g>
+        <path id="w1" class="wire" d="M200 180 L70 60"/><path id="w2" class="wire" d="M200 180 L330 60"/>
+        <path id="w3" class="wire" d="M200 180 L70 300"/><path id="w4" class="wire" d="M200 180 L330 300"/>
+      </g>
+      <path class="flow" d="M200 180 L70 60"/><path class="flow" d="M200 180 L330 60" style="animation-delay:-.4s"/>
+      <path class="flow" d="M200 180 L70 300" style="animation-delay:-.8s"/><path class="flow" d="M200 180 L330 300" style="animation-delay:-1.2s"/>
+      <circle class="packet" r="4"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion></circle>
+      <circle class="packet" r="4"><animateMotion dur="3.6s" begin="-1s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion></circle>
+      <circle class="packet" r="4"><animateMotion dur="3.3s" begin="-2s" repeatCount="indefinite"><mpath href="#w3"/></animateMotion></circle>
+      <circle class="packet" r="4"><animateMotion dur="2.8s" begin="-.5s" repeatCount="indefinite"><mpath href="#w4"/></animateMotion></circle>
+      <circle class="core" cx="200" cy="180" r="30"/><text x="200" y="184">CORE</text>
+      <circle class="node" cx="70" cy="60" r="20"/><text x="70" y="64">S1</text>
+      <circle class="node" cx="330" cy="60" r="20"/><text x="330" y="64">S2</text>
+      <circle class="node" cx="70" cy="300" r="20"/><text x="70" y="304">S3</text>
+      <circle class="node" cx="330" cy="300" r="20"/><text x="330" y="304">S4</text>
+    </svg>
+  </div>
+</section>
+
+<div class="link"></div>
+
+<section id="sobre-mi">
+  <div class="container">
+    <div class="sec-head rv"><div class="sec-idx">01 · Sobre mí</div><h2>Entender cómo viaja la información</h2></div>
+    <div class="about">
+      <div class="rv">
+        <p>¡Hola! Soy Josué Daniel. Actualmente curso <strong>Ingeniería en Telecomunicaciones y Redes</strong> en la <strong>Universidad Galileo</strong>.</p>
+        <p>Mi interés por la tecnología nació al intentar entender cómo viaja la información de un punto a otro. Hoy disfruto diseñando topologías complejas, configurando equipos y creando software que interactúa con la infraestructura de red.</p>
+        <p>No me limito a cables y routers: también tengo experiencia en bases de datos, aplicaciones web y diseño de hardware, lo que me da una visión 360° de los proyectos tecnológicos.</p>
+      </div>
+      <div class="photo rv"><div><i class="fa-solid fa-user-astronaut"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="link"></div>
+
+<section id="habilidades">
+  <div class="container">
+    <div class="sec-head rv"><div class="sec-idx">02 · Arsenal</div><h2>Herramientas con las que trabajo</h2></div>
+    <div class="skills rv">
+      <div><h3 style="color:var(--cyan)"><i class="fa-solid fa-server"></i> Infraestructura y hardware</h3>
+        <div class="chips"><span class="chip">Diseño de redes LAN/WAN</span><span class="chip">Cisco Packet Tracer</span><span class="chip">Enrutamiento y switching</span><span class="chip">KiCad (PCB)</span><span class="chip">Prototipado de hardware</span><span class="chip">Telecomunicaciones</span></div></div>
+      <div><h3 style="color:var(--violet)"><i class="fa-solid fa-code"></i> Desarrollo y software</h3>
+        <div class="chips"><span class="chip">Oracle APEX</span><span class="chip">PL/SQL</span><span class="chip">JavaScript</span><span class="chip">HTML5 / CSS3</span><span class="chip">Node.js</span><span class="chip">MySQL</span></div></div>
+    </div>
+  </div>
+</section>
+
+<div id="modulos"></div>
+
+<div class="link"></div>
+
+<section id="contacto">
+  <div class="container"><div class="box rv">
+    <div class="sec-idx" style="justify-content:center">07 · Contacto</div>
+    <h2>Conectemos</h2>
+    <p>Estoy enfocado en mis estudios, pero siempre abierto a nuevas oportunidades, proyectos de redes o a charlar de tecnología.</p>
+    <a href="mailto:tu-correo@ejemplo.com" class="btn btn-primary"><i class="fa-regular fa-envelope"></i> Escríbeme un correo</a>
+    <div class="socials">
+      <a href="https://github.com/villeda14" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div></div>
+</section>
+</main>
+
+<footer>Diseñado y construido por <span style="color:var(--cyan)">Josué Daniel Villeda</span> © 2026</footer>
+
+<dialog id="dlg-prev"><div class="dlg"><div class="dlg-head"><h3 id="prev-t"></h3><button class="x" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button></div><div id="prev-b"></div></div></dialog>
+
+<dialog id="dlg-form"><div class="dlg">
+  <div class="dlg-head"><h3 id="form-t">Agregar</h3><button class="x" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button></div>
+  <form class="f" id="form">
+    <input type="hidden" name="seccion" id="f-seccion"><input type="hidden" id="f-id">
+    <div class="field"><label for="i-titulo">Título</label><input id="i-titulo" name="titulo" required></div>
+    <div class="field"><label for="i-cat">Categoría</label><input id="i-cat" name="categoria" list="dl-cat" required><datalist id="dl-cat"></datalist></div>
+    <div class="field"><label for="i-desc">Descripción</label><textarea id="i-desc" name="descripcion" required></textarea></div>
+    <div class="field" data-for="tarjetas notas"><label for="i-tec">Etiquetas (separadas por coma)</label><input id="i-tec" name="tecnologias"></div>
+    <div class="field" data-for="notas linea"><label for="i-fecha">Fecha</label><input id="i-fecha" name="fecha" placeholder="Ej. Nov 2026"></div>
+    <div class="field" data-for="tarjetas linea"><label for="i-enlace">Enlace (opcional)</label><input id="i-enlace" name="enlace" type="url"></div>
+    <div class="field" data-for="tarjetas linea"><label for="i-img">Imagen, GIF o video de vista previa</label><input id="i-img" name="imagen" type="file" accept="image/*,video/mp4,video/webm"><small>Ej. captura de la topología o grabación de la simulación.</small></div>
+    <div class="field" data-for="tarjetas"><label for="i-arc">Archivo descargable (.pkt, .pka, .pkz, .zip, .pdf)</label><input id="i-arc" name="archivo" type="file" accept=".pkt,.pka,.pkz,.zip,.pdf"><small>Máx. 50 MB. Si es un .pkt o .pka de Packet Tracer, la topología interactiva se genera sola.</small></div>
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <p id="msg" role="status"></p>
+  </form>
+</div></dialog>
+
+<dialog id="dlg-topo"><div class="dlg">
+  <div class="dlg-head"><h3 id="topo-t">Topología</h3><button class="x" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="topo-wrap">
+    <div class="topo-view" id="topo-view">
+      <div class="tv-legend" aria-hidden="true"><span><i class="l-straight"></i>Directo</span><span><i class="l-cross"></i>Cruzado</span><span><i class="l-serial"></i>Serial WAN</span></div>
+      <div class="tv-tools">
+        <button id="tz-in" aria-label="Acercar">+</button><button id="tz-out" aria-label="Alejar">−</button>
+        <button id="tz-0" aria-label="Restablecer vista"><i class="fa-solid fa-expand"></i></button>
+        <button id="tz-ports" aria-label="Mostrar puertos" aria-pressed="false"><i class="fa-solid fa-plug"></i></button>
+      </div>
+    </div>
+    <aside class="topo-side">
+      <h4>Simulación de tráfico</h4>
+      <div class="field"><label for="tp-from">Origen</label><select id="tp-from"></select></div>
+      <div class="field"><label for="tp-to">Destino</label><select id="tp-to"></select></div>
+      <div class="row-btns"><button class="btn btn-primary btn-sm" id="tp-go"><i class="fa-solid fa-play"></i> Enviar paquete</button><button class="btn btn-outline btn-sm" id="tp-clr" aria-label="Limpiar"><i class="fa-solid fa-rotate-left"></i></button></div>
+      <ol id="tp-log" aria-live="polite"></ol>
+      <h4>Dispositivo</h4>
+      <div class="box" id="tp-info">Toca un dispositivo para ver sus interfaces, direccionamiento y configuración.</div>
+      <p class="note-small">Topología leída automáticamente del archivo de Packet Tracer. La ruta se calcula sobre los enlaces; no es un emulador. Descarga el <span class="mono">.pkt</span> para simular el original.</p>
+    </aside>
+  </div>
+</div></dialog>
+
+<dialog id="dlg-mod"><div class="dlg">
+  <div class="dlg-head"><h3>Gestionar módulos</h3><button class="x" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button></div>
+  <p style="font-size:.9rem">Cada módulo es una sección de tu portafolio. Crea, renombra, ordena o elimina los que quieras.</p>
+  <div id="mod-list"></div>
+  <form class="f mod-new" id="mod-form">
+    <h3 style="margin:0;font-size:1rem">Nuevo módulo</h3>
+    <div class="field"><label for="m-nombre">Nombre</label><input id="m-nombre" required placeholder="Ej. Ciberseguridad"></div>
+    <div class="field"><label for="m-desc">Descripción corta</label><input id="m-desc"></div>
+    <div class="field"><label for="m-tipo">Formato</label><select id="m-tipo"><option value="tarjetas">Tarjetas (proyectos con imagen y archivo)</option><option value="notas">Notas (texto, apuntes)</option><option value="linea">Línea de tiempo (títulos, logros)</option></select></div>
+    <button class="btn btn-primary" type="submit">Crear módulo</button>
+  </form>
+</div></dialog>
+
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>

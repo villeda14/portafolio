@@ -1,0 +1,47 @@
+[
+ {
+  "id": 5,
+  "titulo": "Red Corporativa Café Altiplano, S.A.",
+  "descripcion": "Diseño e implementación de la red de una empresa con oficina central en Ciudad de Guatemala y cuatro sucursales (Quetzaltenango, Antigua, Cobán y Puerto Barrios). Incluye VLANs por área, direccionamiento VLSM con un bloque contiguo por sede, enlaces WAN seriales con rutas estáticas, core capa 3 con distribución redundante (EtherChannel, rapid-PVST), DHCP/DNS/HTTP centralizados y seguridad básica: SSH v2, contraseñas cifradas, port-security, bpduguard y red de invitados aislada. El informe incluye plan de direccionamiento, configuraciones, análisis de velocidades y cotización de materiales.",
+  "tecnologias": "Packet Tracer, VLANs, VLSM, Enrutamiento estático, EtherChannel, Rapid-PVST, DHCP, DNS, SSH, Port-security",
+  "categoria": "Packet Tracer",
+  "creado_en": "2026-11-17T20:51:04.000Z",
+  "imagen": "/uploads/cafe-altiplano.png",
+  "enlace": "/uploads/cafe-altiplano-informe.pdf",
+  "seccion": "redes",
+  "archivo": "/uploads/cafe-altiplano.pkt",
+  "archivo_nombre": "Proyecto_Final_Cafe_Altiplano.pkt",
+  "fecha": "Nov 2026",
+  "topologia": "/uploads/cafe-altiplano-topologia.json"
+ },
+ {
+  "id": 2,
+  "titulo": "Sistema de Gestión con Oracle APEX y PL/SQL",
+  "descripcion": "Aplicación de desarrollo de software y bases de datos construida con Oracle APEX. Incluye modelado relacional, lógica de negocio en procedimientos y funciones PL/SQL, y una interfaz web para la captura y consulta de datos. Orientada a la integridad de los datos y a la automatización de procesos.",
+  "tecnologias": "Oracle APEX, PL/SQL, Oracle Database, SQL",
+  "categoria": "Bases de Datos",
+  "creado_en": "2026-11-17T20:15:56.000Z",
+  "imagen": null,
+  "enlace": null,
+  "seccion": "programacion",
+  "archivo": null,
+  "archivo_nombre": null,
+  "fecha": null,
+  "topologia": null
+ },
+ {
+  "id": 1,
+  "titulo": "Conversor de Expresiones Regulares a DFA Mínimo",
+  "descripcion": "Programa desarrollado desde cero que transforma expresiones regulares en autómatas finitos deterministas (DFA) mínimos. Implementa el análisis sintáctico de la expresión, la construcción del autómata y su minimización, sin depender de librerías externas de autómatas. El énfasis del proyecto está en la lógica algorítmica y en la correcta aplicación de la teoría de lenguajes formales.",
+  "tecnologias": "Teoría de Autómatas, Algoritmos, Lenguajes Formales",
+  "categoria": "Algoritmos",
+  "creado_en": "2026-11-17T20:15:56.000Z",
+  "imagen": null,
+  "enlace": null,
+  "seccion": "programacion",
+  "archivo": null,
+  "archivo_nombre": null,
+  "fecha": null,
+  "topologia": null
+ }
+]

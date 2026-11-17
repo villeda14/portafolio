@@ -1,0 +1,34 @@
+[
+ {
+  "id": 1,
+  "slug": "redes",
+  "nombre": "Redes",
+  "descripcion": "Simulaciones y topologías en Packet Tracer.",
+  "tipo": "tarjetas",
+  "orden": 1
+ },
+ {
+  "id": 2,
+  "slug": "programacion",
+  "nombre": "Programación",
+  "descripcion": "Algoritmos, bases de datos y software.",
+  "tipo": "tarjetas",
+  "orden": 2
+ },
+ {
+  "id": 3,
+  "slug": "notas",
+  "nombre": "Notas",
+  "descripcion": "Comentarios propios sobre estudios e implementación de redes.",
+  "tipo": "notas",
+  "orden": 3
+ },
+ {
+  "id": 4,
+  "slug": "logros",
+  "nombre": "Títulos y logros",
+  "descripcion": "Formación, certificaciones y reconocimientos.",
+  "tipo": "linea",
+  "orden": 4
+ }
+]

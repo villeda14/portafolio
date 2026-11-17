@@ -1,0 +1,15 @@
+dialog{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:var(--r-lg);padding:0;max-width:min(920px,94vw);width:100%;box-shadow:0 40px 100px rgba(0,0,0,.6)}
+dialog::backdrop{background:rgba(8,9,10,.8);backdrop-filter:blur(6px)}
+.dlg{padding:var(--s5);max-height:88vh;overflow:auto}
+.dlg-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--s4)}
+.dlg-head h3{margin:0}
+.x{background:none;border:0;color:var(--muted);font-size:1.4rem;cursor:pointer;min-width:44px;min-height:44px}
+dialog img,dialog video{width:100%;border-radius:var(--r-md)}
+form.f{display:grid;gap:var(--s4)}
+.field{display:grid;gap:var(--s2)}
+.field label{font:600 .8rem var(--font-mono);color:var(--muted)}
+.field input,.field textarea,.field select{width:100%;min-height:44px;padding:var(--s3) var(--s4);font:inherit;font-size:1rem;color:var(--text);background:var(--bg);border:1px solid var(--border);border-radius:var(--r-md)}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px rgba(240,163,94,.2)}
+.field small{color:var(--muted);font-size:.78rem}
+#msg{font:500 .85rem var(--font-mono);color:var(--muted);margin:0}

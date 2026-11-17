@@ -1,0 +1,7 @@
+node_modules/
+.env
+.DS_Store
+*.log
+
+# material original (fuentes de proyectos y versión anterior del HTML)
+material/
